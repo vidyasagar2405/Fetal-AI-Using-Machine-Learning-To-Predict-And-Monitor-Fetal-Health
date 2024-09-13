@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-transform : uppercase;
+        }
+        .contact-info {
+            margin-bottom: 100px; 
+        }
+        .contact-info div {
+            margin-bottom: 10px;
+        }
+        .contact-info .icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: #00FF00;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #00FF00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .contact-form button:hover {
+            background-color: #00CC00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <div>
+                <span class="icon"></span>
+                <strong>Location:</strong> Survey no. 91, Sundarayya Vignana Kendram, Technical Block, 6th floor, Madhava Reddy Colony, Gachibowli, Hyderabad, Telangana 500032
+            </div>
+            <div>
+                <span class="icon"></span>
+                <strong>Email:</strong> vidyasagar2405@gmail.com
+            </div>
+            <div>
+                <span class="icon"></span>
+                <strong>Call:</strong> +91 6300458508
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="/submit_form" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
