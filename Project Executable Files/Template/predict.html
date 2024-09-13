@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FetalHealth</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #ff007f;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .header nav a {
+            color: #00ff00;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+        .header .predict-button {
+            float: right;
+            margin-right: 10px;
+            padding: 5px 10px;
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+            color: #00ff00;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        .header .predict-button:hover {
+            background-color: #00ff00;
+            color: #ff007f;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .form-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin: 10px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .submit-button {
+            padding: 10px 20px;
+            background-color: #00ff00;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #00cc00;
+        }
+    </style>
+    <script>
+        function saveformdata(){
+            console.log("form is saved successfully")
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>FETALHEALTH.</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#check">Check here</a>
+            <a href="#contact">Contact</a>
+            <a class="predict-button" href="#predict">Inspect</a>
+        </nav>
+    </div>
+    <div class="content">
+        <h2>FetalHealth</h2>
+        <div class="form-container">
+            <div class="form-group">
+                <label for="prolongued_decelerations">prolongued_decelerations</label>
+                <input type="text" id="prolongued_decelerations" name="prolongued_decelerations" value="3">
+            </div>
+            <div class="form-group">
+                <label for="histogram_variance">histogram_variance</label>
+                <input type="text" id="histogram_variance" name="histogram_variance" value="5">
+            </div>
+            <div class="form-group">
+                <label for="histogram_mode">histogram_mode</label>
+                <input type="text" id="histogram_mode" name="histogram_mode" value="0">
+            </div>
+            <div class="form-group">
+                <label for="abnormal_short_term_variability">abnormal_short_term_variability</label>
+                <input type="text" id="abnormal_short_term_variability" name="abnormal_short_term_variability" value="1">
+            </div>
+            <div class="form-group">
+                <label for="histogram_median">histogram_median</label>
+                <input type="text" id="histogram_median" name="histogram_median" value="8">
+            </div>
+            <div class="form-group">
+                <label for="accelerations">accelerations</label>
+                <input type="text" id="accelerations" name="accelerations" value="4">
+            </div>
+            <div class="form-group">
+                <label for="percentage_of_time_with_abnormal_long_term_variability">percentage_of_time_with_abnormal_long_term_variability</label>
+                <input type="text" id="percentage_of_time_with_abnormal_long_term_variability" name="percentage_of_time_with_abnormal_long_term_variability" value="2">
+            </div>
+            <div class="form-group">
+                <label for="mean_value_of_long_term_variability">mean_value_of_long_term_variability</label>
+                <input type="text" id="mean_value_of_long_term_variability" name="mean_value_of_long_term_variability" value="1">
+            </div>
+        </div>
+        <button class="submit-button" onclick="saveformdata()">submit</button>
+    </div>
+</body>
+</html>
